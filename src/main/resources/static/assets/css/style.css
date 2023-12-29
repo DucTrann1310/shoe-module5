@@ -1,0 +1,144 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.icon-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.icon-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.custom-icon {
+    color: dodgerblue; /* Màu xanh da trời */
+}
+
+.cart-quantity-wrap {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.cart-quantity {
+    align-items: center;
+    background-color: #0006;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 10px;
+    width: 100px;
+}
+
+.cart-quantity span:first-child {
+    cursor: pointer;
+    text-align: center;
+    width: 25px;
+
+}
+
+.cart-quantity span:last-child {
+    cursor: pointer;
+    text-align: center;
+    width: 25px;
+}
+
+.cart-table tbody tr td {
+    padding: 20px 0;
+    vertical-align: middle;
+}
+
+.action-wrap {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-remove {
+    background-color: #0006;
+    border-radius: 50%;
+    color: #fff;
+    border-color: #00000000;
+}
+
+.btn-remove:hover {
+    background-color: #00000080;
+}
+
+.homelink {
+    color: blue;
+    text-decoration: underline;
+}
+
+.homelink:hover {
+    color: #980ec5;
+}
+
+.page-cursor {
+    cursor: pointer;
+}
+
+.minus:hover {
+    background-color: rgba(0, 0, 0, 0.25)
+}
+
+.plus:hover {
+    background-color: rgba(0, 0, 0, 0.25)
+}
+
+.order-summary {
+    background-color: #0003;
+    border-radius: 5px;
+}
+
+.customer-info {
+    background-color: #0000001a;
+    border-radius: 5px;
+    margin-top: 4px;
+    padding: 5px;
+}
+
+.error-message {
+    color: red;
+}
+
+.btn-checkout:hover {
+    background-color: #003b00;
+    cursor: pointer;
+}
+
+a.order-list {
+    color: blue;
+    text-decoration: none;
+}
+
+a.order-list:hover {
+    color: #041d85;
+}
+
+a.product-list {
+    color: blue;
+    text-decoration: none;
+}
+
+a.product-list:hover {
+    color: #041d85;
+}
+
+.table-list thead tr th{
+    background-color: #2686e6;
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+
+.dashboard-active{
+    background-color: #75baff80;
+}

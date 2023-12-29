@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shoe-Ecommerce</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/bootstrap/v5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="/assets/jquery/jquery-3.7.1.min.js"></script>
+    <script src="/assets/bootstrap/v5.3.2/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container d-flex align-items-center border-bottom py-2 mt-2" >
+    <div class="d-flex align-items-center" style="min-width: 180px;">
+        <a class="icon-button icon-link" href="/shoe-ecommerce/dashboard/order-list">
+            <i class="fa-solid fa-cart-plus fa-xl"></i>
+            Dashboard
+        </a>
+
+    </div>
+    <div class="d-flex flex-grow-1 justify-content-end">
+        <a href="/shoe-ecommerce" class="homelink">
+            Đức Trần
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </a>
+    </div>
+</div>
+<div class="container d-flex py-2">
+    <div style="min-width: 180px">
+        <div>
+            <h5>Menu</h5>
+            <div class="d-flex flex-column">
+                    <a href="/shoe-ecommerce/dashboard/order-list" class="order-list dashboard-active">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                        Order List
+                    </a>
+                <a href="/shoe-ecommerce/dashboard/product-list" class="product-list ">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    Products
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="flex-grow-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>
+                        Order Management
+                    </h5>
+                    <table class="table table-striped table-list">
+                        <thead>
+                            <tr>
+                                <th class="text-end">Order Date</th>
+                                <th class="text-end">Total Products</th>
+                                <th class="text-end">Subtotal</th>
+                                <th class="text-end">Shipping</th>
+                                <th class="text-end">Total Amount</th>
+                                <th class="text-end">Status</th>
+                                <th class="text-end">Customer Name</th>
+                                <th class="text-end">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-5 border p-2 order-detail-content rounded hide">
+                    <div class="d-flex align-items-center justify-content-between border-bottom">
+                        <h5>Order details</h5>
+                        <span role="button" class="btn-close"></span>
+                    </div>
+                    <div class="my-2 border-bottom order-info">
+                    </div>
+                    <div class="my-2 border-bottom customer-info">
+                    </div>
+                    <div class="my-2 border-bottom order-detail-info">
+                        <h6>Order details</h6>
+                        <table class="table table-striped">
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="/assets/js/order-list.js"></script>
+</html>

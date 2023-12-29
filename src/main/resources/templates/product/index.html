@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shoe-Ecommerce</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/bootstrap/v5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/jquery/jquery-3.7.1.min.js"></script>
+    <script src="/assets/bootstrap/v5.3.2/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container d-flex align-items-center border-bottom py-2 mt-2" >
+    <div class="d-flex align-items-center" style="min-width: 180px;">
+        <a class="icon-button" href="/shoe-ecommerce">
+            <i class="fa-solid fa-cart-plus fa-xl"></i>
+            Shoe-Ecommerce
+        </a>
+
+    </div>
+    <div class="d-flex flex-grow-1 justify-content-between">
+        <form class="w-50 d-flex align-items-center">
+            <input type="text" id="inputSearch" class="form-control form-control-sm" placeholder="Enter your search shoes"
+                   style="padding-right: 25px; width: 100%; border-radius: 0.25rem;">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="15"
+                 width="15" xmlns="http://www.w3.org/2000/svg"
+                 style="color: rgba(0, 0, 0, 0.2); margin-left: -25px;">
+                <path
+                        d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                </path>
+            </svg>
+        </form>
+        <div class="d-flex" id="cart-user" style="padding-top: 10px;">
+        </div>
+
+    </div>
+</div>
+<div class="container d-flex">
+    <div style="min-width: 180px;">
+        <div class="d-flex flex-column border-end me-1 h-100">
+            <div class="py-2 d-flex flex-column justify-content-center">
+                <h5>Category</h5>
+                <div class="form-group" id="categoryContent">
+                    <div class="form-check py-1">
+                        <input class="form-check-input" type="radio" name="category" id="cat_0" value="All"
+                               checked>
+                        <label for="cat_0" role="button"
+                               class="form-check-label text-decoration-underline fw-bolder">All</label>
+                    </div>
+                </div>
+            </div>
+            <div class="py-2 d-flex flex-column justify-content-center">
+                <h5>Price</h5>
+                <div class="form-group" id="priceContent">
+                </div>
+            </div>
+            <div class="py-2 d-flex flex-column justify-content-center">
+                <h5>Colors</h5>
+                <div class="form-group" id="colorContent">
+                    <div class="form-check py-1">
+                        <input class="form-check-input" type="radio" name="color" id="color_0" value="All"
+                               checked style="background-image: linear-gradient(to right, red, green);">
+                        <label role="button" for="color_0"
+                               class="form-check-label text-decoration-underline fw-bolder">All</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-grow-1">
+        <div class="py-2 d-flex flex-column justify-content-center">
+            <h5>Recommended</h5>
+            <div class="form-group" id="companyContent">
+                <button class="btn btn-sm btn-outline-secondary me-1 active " type="button">All Products</button>
+            </div>
+        </div>
+        <div class="py-2 d-flex flex-column justify-content-center">
+            <h5>Products</h5>
+            <div class="row" id="productContent">
+            </div>
+        </div>
+        <nav class="d-flex justify-content-center" aria-label="Page navigation example">
+            <ul class="pagination">
+            </ul>
+        </nav>
+    </div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/assets/bootstrap/v5.3.2/js/appUtils.js"></script>
+<script src="/assets/js/shoe.js"></script>
+</html>
